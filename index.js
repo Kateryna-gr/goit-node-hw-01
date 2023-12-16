@@ -1,5 +1,5 @@
-import * as contactsFunction from "./contacts.js";
-import yargs from "yargs";
+const contactsFunction = require("./contacts.js");
+const argv = require("yargs").argv;
 
 const invokeAction = async ({ action, id, name, email, phone }) => {
   switch (action) {
@@ -24,4 +24,4 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
   }
 };
 
-invokeAction(yargs.argv);
+invokeAction(argv);

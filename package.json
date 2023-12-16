@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node index",
     "start:dev": "nodemon index",
@@ -13,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nanoid": "^5.0.4",
+    "nanoid": "3.3",
     "yargs": "^17.7.2"
   },
   "devDependencies": {
